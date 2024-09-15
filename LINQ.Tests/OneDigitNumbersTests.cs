@@ -10,5 +10,6 @@ public class OneDigitNumbersTests
         // Act
 
         // Assert
+
     }
 }

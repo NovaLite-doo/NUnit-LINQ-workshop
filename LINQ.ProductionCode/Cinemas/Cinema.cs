@@ -9,7 +9,8 @@ public class Cinema
         Movies = movies;
     }
 
-    public IEnumerable<Movie> GetMoviesWithRatingGreaterThan(double rating)
+    // 01
+    public List<Movie> GetMoviesWithRatingGreaterThan(double rating)
     {
         var result = new List<Movie>();
         foreach (var movie in Movies)
@@ -23,7 +24,8 @@ public class Cinema
         return result;
     }
 
-    public IEnumerable<string> GetTitleOfMoviesOlderThan(int year)
+    // 02
+    public List<string> GetTitleOfMoviesOlderThan(int year)
     {
         var result = new List<string>();
         foreach (var movie in Movies)
@@ -37,9 +39,10 @@ public class Cinema
         return result;
     }
 
+    // 03
     public Movie GetMovieWithHighestRating()
     {
-        Movie highestRatedMovie = Movies[0];
+        var highestRatedMovie = Movies[0];
         foreach (var movie in Movies)
         {
             if (movie.Rating > highestRatedMovie.Rating)
@@ -51,9 +54,10 @@ public class Cinema
         return highestRatedMovie;
     }
 
+    // 04
     public string GetLowestRatedMovieTitleFromYear(int year)
     {
-        Movie lowestRatedMovie = Movies[0];
+        var lowestRatedMovie = Movies[0];
         foreach (var movie in Movies)
         {
             if (movie.Year == year)
@@ -68,7 +72,8 @@ public class Cinema
         return lowestRatedMovie.Title;
     }
 
-    public IEnumerable<Movie> GetMoviesAboveAverageRating()
+    // 05
+    public List<Movie> GetMoviesAboveAverageRating()
     {
         double totalRating = 0;
         foreach (var movie in Movies)
@@ -89,32 +94,18 @@ public class Cinema
         return result;
     }
 
-    public List<string> GetTopMovieTitlesByRating(int numberOfTitles)
-    {
-        var sortedMovies = new List<Movie>(Movies);
-        sortedMovies.Sort((movie1, movie2) => movie2.Rating.CompareTo(movie1.Rating));
-
-        var topMovieTitles = new List<string>();
-        for (int i = 0; i < numberOfTitles; i++)
-        {
-            topMovieTitles.Add(sortedMovies[i].Title);
-        }
-
-        return topMovieTitles;
-    }
-
-    public Dictionary<int, List<Movie>> GetMoviesGroupedByYear()
-    {
-        var result = new Dictionary<int, List<Movie>>();
-        foreach (var movie in Movies)
-        {
-            if (!result.ContainsKey(movie.Year))
-            {
-                result.Add(movie.Year, new List<Movie>());
-            }
-            result[movie.Year].Add(movie);
-        }
-
-        return result;
-    }
+    // 06
+    // public List<string> GetTopMovieTitlesByRating(int numberOfTitles)
+    // {
+    //     var sortedMovies = new List<Movie>(Movies);
+    //     sortedMovies.Sort((movie1, movie2) => movie2.Rating.CompareTo(movie1.Rating));
+    // 
+    //     var topMovieTitles = new List<string>();
+    //     for (int i = 0; i < numberOfTitles; i++)
+    //     {
+    //         topMovieTitles.Add(sortedMovies[i].Title);
+    //     }
+    // 
+    //     return topMovieTitles;
+    // }
 }

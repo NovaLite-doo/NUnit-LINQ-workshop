@@ -1,15 +1,14 @@
 namespace LINQ.Tests;
 
-public class Tests
+public class OneDigitNumbersTests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     [Test]
-    public void Test1()
+    public void GetEvenNumbersTest()
     {
-        Assert.Pass();
+        // Arrange
+
+        // Act
+
+        // Assert
     }
 }

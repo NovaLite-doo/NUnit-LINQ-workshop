@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using LINQ.ProductionCode;
+using LINQ.ProductionCode.Numbers;
 
 Console.WriteLine("Even numbers");
 Console.WriteLine(string.Join(", ", OneDigitNumbers.GetEvenNumbers()));

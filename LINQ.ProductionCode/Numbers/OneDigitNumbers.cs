@@ -1,4 +1,4 @@
-﻿namespace LINQ.ProductionCode;
+﻿namespace LINQ.ProductionCode.Numbers;
 
 public class OneDigitNumbers
 {

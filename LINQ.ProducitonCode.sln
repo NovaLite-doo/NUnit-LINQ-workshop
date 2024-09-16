@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ.Tests", "LINQ.Tests\LINQ.Tests.csproj", "{D4FEEC91-91A9-4F3D-9267-0F0A6DE708F8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ.ProductionCode", "LINQ.ProductionCode\LINQ.ProductionCode.csproj", "{2DB3D210-D6BB-4225-8955-921FB2748C32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ.Tests", "LINQ.Tests\LINQ.Tests.csproj", "{D4FEEC91-91A9-4F3D-9267-0F0A6DE708F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

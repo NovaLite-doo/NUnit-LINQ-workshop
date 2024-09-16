@@ -2,8 +2,8 @@
 
 public class OneDigitNumbers
 {
-    private static readonly List<int> Numbers = [9, 5, 2, 7, 1, 3, 8, 6, 4];
-    private static readonly List<string> StringNumbers = ["Nine", "Five", "Two", "Seven", "One", "Three", "Eight", "Six", "Four"];
+    private static readonly List<int> Numbers = new() { 9, 5, 2, 7, 1, 3, 8, 6, 4 };
+    private static readonly List<string> StringNumbers = new() { "Nine", "Five", "Two", "Seven", "One", "Three", "Eight", "Six", "Four" };
 
     // 01
     public static List<int> GetEvenNumbers()
